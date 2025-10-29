@@ -95,7 +95,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.service-card, .step, .contact-item, .stat');
+    const animateElements = document.querySelectorAll('.service-card, .step, .contact-item, .stat, .benefit-card, .testimonial-card');
     
     animateElements.forEach(el => {
         el.style.opacity = '0';
@@ -161,6 +161,29 @@ const handleFormError = (error) => {
     console.error('Form submission error:', error);
     alert('Sorry, there was an error submitting your request. Please try again or contact us directly.');
 };
+
+// FAQ Accordion functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all FAQ items
+            faqItems.forEach(faqItem => {
+                faqItem.classList.remove('active');
+            });
+            
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
+});
 
 // Add keyboard navigation support
 document.addEventListener('keydown', (e) => {
