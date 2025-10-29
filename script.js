@@ -105,43 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Counter animation for stats
-const animateCounters = () => {
-    const counters = document.querySelectorAll('.stat h3');
-    
-    counters.forEach(counter => {
-        const target = parseInt(counter.textContent);
-        const increment = target / 100;
-        let current = 0;
-        
-        const updateCounter = () => {
-            if (current < target) {
-                current += increment;
-                counter.textContent = Math.ceil(current) + (counter.textContent.includes('+') ? '+' : '');
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.textContent = target + (counter.textContent.includes('+') ? '+' : '');
-            }
-        };
-        
-        updateCounter();
-    });
-};
-
-// Trigger counter animation when stats section is visible
-const statsSection = document.querySelector('.about');
-if (statsSection) {
-    const statsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounters();
-                statsObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-    
-    statsObserver.observe(statsSection);
-}
+// Counter animation removed - no stats section anymore
 
 // Add loading states and improve UX
 document.addEventListener('DOMContentLoaded', () => {
