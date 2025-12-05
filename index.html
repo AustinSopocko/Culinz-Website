@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culinz - QR Code Solutions for UK Small Businesses</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any">
-    <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
-    <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
-    <link rel="apple-touch-icon" href="favicon-180x180.png">
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/favicon-180x180.png">
+    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/png">
     <meta name="description" content="Culinz helps UK restaurants and small businesses with QR codes, online shops, and EPOS integrations. Free first month, then £29.99/month + 1.9%.">
     <meta name="theme-color" content="#0f172a">
     <link rel="canonical" href="https://culinz.co.uk/">
@@ -34,526 +31,47 @@
       "@type": "Organization",
       "name": "Culinz",
       "url": "https://culinz.co.uk",
-      "logo": "https://culinz.co.uk/favicon-180x180.png",
-      "description": "Culinz helps UK restaurants and small businesses with QR codes, online shops, and EPOS integrations.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://culinz.co.uk/favicon-180x180.png",
+        "width": 180,
+        "height": 180
+      },
+      "image": "https://culinz.co.uk/favicon-180x180.png",
+      "description": "Culinz helps UK restaurants and small businesses with QR codes, online shops, and EPOS integrations. Free first month, then £29.99/month + 1.9%.",
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "john@culinz.co.uk",
-        "contactType": "Customer Service"
+        "contactType": "Customer Service",
+        "areaServed": "GB",
+        "availableLanguage": "English"
       },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "London",
         "addressCountry": "GB"
+      },
+      "sameAs": [
+        "https://culinz.co.uk"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Culinz",
+      "url": "https://culinz.co.uk",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://culinz.co.uk/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
     }
     </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Culinz</h2>
-            </div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="#demo" class="nav-link cta-button">Request Demo</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Transform Your Business with 
-                    <span class="highlight">Smart QR Codes</span>
-                </h1>
-                <p class="hero-subtitle">
-                    We help UK restaurants and small businesses create seamless digital experiences 
-                    with QR code solutions and custom online shops that boost customer engagement.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#demo" class="btn btn-primary">Get Started Today</a>
-                    <a href="#services" class="btn btn-secondary">Learn More</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="qr-showcase">
-                    <div class="qr-code">
-                        <i class="fas fa-qrcode"></i>
-                    </div>
-                    <div class="floating-elements">
-                        <div class="element element-1">📱</div>
-                        <div class="element element-2">🍽️</div>
-                        <div class="element element-3">💳</div>
-                        <div class="element element-4">🛒</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>What We Do</h2>
-                <p>Comprehensive digital solutions for modern UK businesses</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-qrcode"></i>
-                    </div>
-                    <h3>QR Code Solutions</h3>
-                    <p>Custom QR codes for menus, payments, and customer engagement. Easy setup with professional design. Seamlessly integrates with your existing EPOS system.</p>
-                    <ul class="service-features">
-                        <li>Digital menus</li>
-                        <li>Contactless payments</li>
-                        <li>EPOS integration</li>
-                        <li>Customer feedback</li>
-                        <li>Loyalty programs</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-store"></i>
-                    </div>
-                    <h3>Online Shop Creation</h3>
-                    <p>Beautiful, mobile-friendly online stores for restaurants and small businesses with integrated ordering.</p>
-                    <ul class="service-features">
-                        <li>Mobile-optimized design</li>
-                        <li>Online ordering system</li>
-                        <li>Payment processing</li>
-                        <li>EPOS system integrations</li>
-                        <li>Inventory management</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Business Analytics</h3>
-                    <p>Track customer behavior, popular items, and sales performance with detailed analytics dashboard.</p>
-                    <ul class="service-features">
-                        <li>Sales tracking</li>
-                        <li>Customer insights</li>
-                        <li>Performance reports</li>
-                        <li>Growth recommendations</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2>How It Works</h2>
-                <p>Simple steps to transform your business</p>
-            </div>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Consultation</h3>
-                        <p>We discuss your business needs and goals to create the perfect solution.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Design & Setup</h3>
-                        <p>We create your QR codes and online shop with your branding and requirements.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Launch & Support</h3>
-                        <p>We launch your digital presence and provide ongoing support and training.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose Culinz?</h2>
-                <p>We make digital transformation simple and affordable</p>
-            </div>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-pound-sign"></i>
-                    </div>
-                    <h3>Affordable Pricing</h3>
-                    <p>Cost-effective solutions designed for small businesses without hidden fees or complicated contracts.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Quick Setup</h3>
-                    <p>Get your QR codes and online shop live in days, not weeks. Fast implementation with minimal disruption.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Secure & Reliable</h3>
-                    <p>Enterprise-grade security and 99.9% uptime guarantee. Your business stays online when you need it.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>24/7 Support</h3>
-                    <p>Our support team is available 24/7 to help. Training included with every setup so you're never alone.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Mobile Optimized</h3>
-                    <p>Everything we create is designed mobile-first. Perfect experiences on any device your customers use.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Data-Driven Insights</h3>
-                    <p>Understand your customers better with real-time analytics and actionable business intelligence.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Callout Section -->
-    <section class="pricing-callout">
-        <div class="container">
-            <div class="pricing-card">
-                <div class="pricing-content">
-                    <h2>Simple, Transparent Pricing</h2>
-                    <p>Start with a free month, then just £29.99/month + 1.9% transaction fee</p>
-                    <div class="pricing-features">
-                        <div class="pricing-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Free first month - no commitment</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>£29.99/month after trial</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Only 1.9% transaction fee</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Cancel anytime - no contracts</span>
-                        </div>
-                    </div>
-                    <a href="#demo" class="btn btn-primary">Start Free Trial</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Our Clients Say</h2>
-                <p>Trusted by UK businesses across the country</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Seamless integration with our EPOS system. Orders flow right through."</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Quick setup, easy to use, and customers love the QR menu."</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"The online shop keeps orders coming in even when we're closed."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Request Demo Section -->
-    <section id="demo" class="demo-section">
-        <div class="container">
-            <div class="demo-content">
-                <div class="demo-text">
-                    <h2>Ready to Transform Your Business?</h2>
-                    <p>See how Culinz can help your restaurant or small business thrive in the digital age. Request a free demo today.</p>
-                    <div class="demo-benefits">
-                        <div class="benefit">
-                            <i class="fas fa-check"></i>
-                            <span>Free consultation</span>
-                        </div>
-                        <div class="benefit">
-                            <i class="fas fa-check"></i>
-                            <span>Custom solution design</span>
-                        </div>
-                        <div class="benefit">
-                            <i class="fas fa-check"></i>
-                            <span>Free first month - £29.99/month after</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="demo-form">
-                    <form class="contact-form">
-                        <h3>Request Your Demo</h3>
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <select id="business-type" name="business-type" required>
-                                <option value="">Select Business Type</option>
-                                <option value="restaurant">Restaurant</option>
-                                <option value="cafe">Café</option>
-                                <option value="bar">Bar/Pub</option>
-                                <option value="retail">Retail Store</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Tell us about your business and what you'd like to achieve" rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Request Demo</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>Ready to get started? Contact us today</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>john@culinz.co.uk</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>London, United Kingdom</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="faq-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Frequently Asked Questions</h2>
-                <p>Everything you need to know about our services</p>
-            </div>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How long does it take to set up?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Most businesses can have their QR codes and online shop live within 5-7 business days. Simple QR menu setups can be completed in as little as 48 hours.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What are your pricing plans?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Our QR code packages are £29.99/month with the first month completely free. We charge a 1.9% transaction fee on payments processed through our platform. Our online shop solutions include all features with the same pricing structure. Contact us for a custom quote based on your specific requirements.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Do I need technical knowledge?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Not at all! We handle all the technical setup and provide comprehensive training. Our user-friendly dashboard is designed for non-technical users, and our support team is always available to help.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Can I customize the design?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Absolutely! We work with your existing branding, logos, and color schemes to create a seamless experience that matches your business identity. Full customization options are available.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What payment methods do you support?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We integrate with major UK payment providers including Stripe, Square, and PayPal. We also support popular restaurant-specific payment systems. All transactions are secure and PCI compliant.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Do you integrate with EPOS systems?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes! We integrate with a wide range of popular EPOS systems including Square, Clover, Lightspeed, TouchBistro, and many others. This allows seamless synchronization of orders, inventory, and sales data between your online shop and your in-store system.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Is there a contract or minimum term?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>No long-term contracts required. Our monthly plans operate on a month-to-month basis, giving you the flexibility to cancel at any time. We also offer annual plans with discounted rates.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partners Section -->
-    <section class="partners-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Trusted Partners</h2>
-                <p>We work with leading UK businesses and technology providers</p>
-            </div>
-            <div class="partners-grid">
-                <div class="partner-item">
-                    <div class="partner-icon">
-                        <i class="fas fa-credit-card"></i>
-                    </div>
-                    <h4>Payment Partners</h4>
-                    <p>Stripe, Square, PayPal</p>
-                </div>
-                <div class="partner-item">
-                    <div class="partner-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h4>Hosting Partners</h4>
-                    <p>AWS, Cloudflare</p>
-                </div>
-                <div class="partner-item">
-                    <div class="partner-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h4>Security Partners</h4>
-                    <p>SSL, PCI Compliant</p>
-                </div>
-                <div class="partner-item">
-                    <div class="partner-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h4>Business Partners</h4>
-                    <p>UK Hospitality Alliance</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Culinz</h3>
-                    <p>Transforming UK businesses with smart QR code solutions and online shops.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">QR Code Solutions</a></li>
-                        <li><a href="#services">Online Shop Creation</a></li>
-                        <li><a href="#services">Business Analytics</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#demo">Request Demo</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Culinz. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
